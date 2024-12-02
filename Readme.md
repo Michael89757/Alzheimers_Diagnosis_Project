@@ -25,3 +25,9 @@ To reach that goal the files as follows are included:
 - `{r} Makefile` :This file includes all the make commands to build the report.
 
 - `{r} Readme.md`
+
+- `{r} renv` : This folder includes a directory containing copy of the R version and packages on their version. 
+- `{r} renv.lock`: This file contains information about packages and versions of packages and R used in this project.
+
+## Install packages
+To install the packages used and update to versions in the project, user can use `{r} make install` in the terminal.
