@@ -1,2 +1,0 @@
-renv::activate()
-renv::restore()

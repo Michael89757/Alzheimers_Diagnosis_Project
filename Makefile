@@ -34,6 +34,6 @@ regression_analysis:02_Output/Regression_models_config_${WHICH_CONFIG}.rds
 .PHONY:Figures
 Figures: 03_Figure/boxplot_M_d.png 03_Figure/boxplot_M_E.png
 
-.PHONY: install
-install:Rscript install_packages.R
+install:
+	Rscript -e "renv::restore()"
 
