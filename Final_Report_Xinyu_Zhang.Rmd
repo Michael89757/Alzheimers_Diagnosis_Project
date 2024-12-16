@@ -4,12 +4,8 @@ author: "Xinyu Zhang"
 date: "`r Sys.Date()`"
 output: html_document
 ---
-```{r.read-config, include = FALSE}
-WHICH_CONFIG<-Sys.getnv("WHICH_CONFIG")
-config_list <- config::get(config=WHICH_CONFIG)
-```
 
-```{r,set-up-chuncks,echo=FALSE,eval=config_list$production}
+```{r,set-up-chuncks,echo=FALSE,eval=FALSE}
 library(knitr)
 opts_chunk$set(
   echo=FALSE, warning= FALSE, message = FALSE
@@ -56,7 +52,7 @@ table_one
 
 # Graphs
 
-```{r,plot_data}
+```{r,plot_data_1}
 #| fig.glign="center",
 #| out.width="600px"
 knitr::include_graphics(
@@ -65,7 +61,7 @@ knitr::include_graphics(
  
 ```
 
-```{r,plot_data}
+```{r,plot_data_2}
 #| fig.glign="center",
 #| out.width="600px"
 knitr::include_graphics(
@@ -73,8 +69,10 @@ knitr::include_graphics(
 )
 
 ```
-# Regression outputs
-```{r, table1}
+
+# Regression output
+
+```{r, table1_1}
 regression_output <- readRDS(
   file = here::here("02_Output/logit_model.rds")
 )
@@ -82,7 +80,8 @@ regression_output
 ```
 
 ## AUC curve:
-```{r,plot_data}
+
+```{r,plot_data_3}
 #| fig.glign="center",
 #| out.width="600px"
 knitr::include_graphics(

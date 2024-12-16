@@ -6,6 +6,7 @@ az_data<- readRDS(
 
 library(pROC)
 library(ggplot2)
+library(gtsummary)
 
 
 logit_model <- glm(Diagnosis ~ MMSE + FunctionalAssessment + MemoryComplaints + BehavioralProblems+ ADL , data = az_data, family = binomial)
