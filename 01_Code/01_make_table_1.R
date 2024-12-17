@@ -7,6 +7,9 @@ data<- readRDS(
 library(gtsummary)
 library(dplyr)
 library(labelled)
+library(broom)
+library(broom.helpers)
+
 
 var_label(data) <-list(
   Age = 'Age',

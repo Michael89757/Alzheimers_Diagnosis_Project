@@ -6,6 +6,6 @@ here::i_am(
 library(rmarkdown)
 rmarkdown::render(
   input = here::here("Final_Report_Xinyu_Zhang.Rmd"),
-  output_file = here::here("Final_Report_Xinyu_Zhang.html")
+  output_file = here::here("report/Final_Report_Xinyu_Zhang.html")
 )
 

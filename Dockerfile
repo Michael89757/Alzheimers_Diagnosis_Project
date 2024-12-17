@@ -4,6 +4,7 @@ FROM rocker/rstudio as base
 RUN mkdir /home/rstudio/final_project
 WORKDIR /home/rstudio/final_project
 RUN touch /home/rstudio/final_project/.here
+RUN mkdir -p /project/report
 
 RUN mkdir -p renv
 COPY renv.lock renv.lock
@@ -37,7 +38,6 @@ COPY 00_Dataset 00_Dataset
 COPY Makefile .
 COPY Final_Report_Xinyu_Zhang.Rmd .
 
-RUN mkdir -p /home/rstudio/final_project/report
 
 CMD make Final_Report_Xinyu_Zhang.html
 

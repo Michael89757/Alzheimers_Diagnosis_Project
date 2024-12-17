@@ -47,8 +47,12 @@ To install the packages used and update to versions in the project, user can use
 - `make 03_Figure/boxplot_M_d.png` & `make 03_Figure/boxplot_M_E.png` create plots.
 - `make 02_Output/logit_model.rds` & `make 03_Figure/AUC_curve.png` create regerssion related results.
 - `make Final_Report_Xinyu_Zhang.html` make the html report and move the report to `report` folder.
+- `make clean`: clean all outputs.
 
+## How to generate report for mac and windows users:
+- Download image from docker hub: https://hub.docker.com/repository/docker/michael89757/final_project_550
+- Run `docker pull michael89757/final_project_550:latest`
 - `make docker_run_mac`:Runs the Docker container for *macOS* with a mounted `report` directory.
 - `make docker_run_win`: Runs the Docker container for *Windows* with a mounted `report` directory.
 
-- `make clean`: clean all outputs.
+
